@@ -19,3 +19,6 @@ def get_db():
         yield db
     finally:
         db.close()
+
+# Importar todos los modelos para que SQLAlchemy los conozca
+from models import user, tarjeta, propuesta, factura
